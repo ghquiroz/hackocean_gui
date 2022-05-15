@@ -1,0 +1,12 @@
+.divform{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+mat-card{
+	width: 800px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
