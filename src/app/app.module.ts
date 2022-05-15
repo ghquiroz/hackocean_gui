@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import {MatCardModule} from "@angular/material/card";
 import { DisasterRecordComponent } from './disaster-record/disaster-record.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     MatCardModule,
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,

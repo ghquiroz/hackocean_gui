@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup} from "@angular/forms";
+import {HttpService} from "../http.service";
 
 @Component({
   selector: 'app-disaster-record',
@@ -9,7 +10,8 @@ import {FormBuilder, FormGroup} from "@angular/forms";
 export class DisasterRecordComponent implements OnInit {
   form: FormGroup;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder,
+              private http: HttpService) { }
 
   ngOnInit(): void {
     this.form = this.fb.group({
@@ -26,7 +28,17 @@ export class DisasterRecordComponent implements OnInit {
   }
 
   submit(data) {
-    console.log('Enviar formulario');
-    console.log(data);
+    const uri = 'ec2-52-23-227-205.compute-1.amazonaws.com:8080/hackocean/disaster'
+    this.http.post(uri, data).subscribe(
+      (result) => {
+        console.log('Respuesta exitosa del servidor');
+        console.log(result);
+      },
+      (error) => {
+        console.log('Respuesta fallida. Ocurrio un error');
+        console.log(error);
+      },
+      () => console.log('Termino de llamar al servidor')
+    )
   }
 }
