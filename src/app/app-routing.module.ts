@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from "./home/home.component";
+import {DisasterRecordComponent} from "./disaster-record/disaster-record.component";
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'disaster-record', component: DisasterRecordComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
