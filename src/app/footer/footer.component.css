@@ -1,0 +1,11 @@
+footer{
+  background-image: url("/assets/watter.png");
+  display: flex;
+  align-items: center;
+  line-height: 100px;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+  }
