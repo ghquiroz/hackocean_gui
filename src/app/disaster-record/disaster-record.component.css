@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
+	padding-bottom: 50px;
 }
 
 mat-card{
@@ -10,3 +10,4 @@ mat-card{
 	padding-left: 50px;
 	padding-right: 50px;
 }
+
