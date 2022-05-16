@@ -14,8 +14,8 @@ Proyecto realizado para el Hackathon de Inovaccion Virtual - Launch X
     - MongoDB
 
 - **Integrantes**
-    - Guadalupe hernandez quiroz (launchx10209@innovaccion.mx)
-    - Martin Jair Días Rodriguez (launchx10203@innovaccion.mx)
+    - Guadalupe Hernández Quiroz (launchx10209@innovaccion.mx)
+    - Martin Jair Díaz Rodriguez (launchx10203@innovaccion.mx)
 
 ![Diagrama](https://raw.githubusercontent.com/ghquiroz/hackocean_gui/main/Documentacion/Diapositiva.png)
 
