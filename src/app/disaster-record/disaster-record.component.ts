@@ -28,7 +28,9 @@ export class DisasterRecordComponent implements OnInit {
   }
 
   submit(data) {
-    const uri = 'ec2-52-23-227-205.compute-1.amazonaws.com:8080/hackocean/disaster'
+    const uri = 'http://ec2-52-23-227-205.compute-1.amazonaws.com:8080/hackocean/disaster'
+    console.log('data');
+    console.log(data);
     this.http.post(uri, data).subscribe(
       (result) => {
         console.log('Respuesta exitosa del servidor');
