@@ -1,0 +1,22 @@
+<div class="row" style="margin-bottom: 4em">
+  <div class="col-md-12">
+    <h1>Ultimo desastres registrados:</h1>
+  </div>
+  <div class="col-md-4" *ngFor="let disaster of disasters">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title style="padding-bottom: 1em">{{disaster.title}}</mat-card-title>
+        <mat-card-subtitle>{{disaster.date}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="assets/desastres_marinos.png" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          {{disaster.description}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button type="button" class="btn btn-primary">Ver más</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

@@ -6,6 +6,7 @@ import {DisasterRecordComponent} from "./disaster-record/disaster-record.compone
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'disaster-record', component: DisasterRecordComponent },
+  { path: 'disaster-record/:id', component: DisasterRecordComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
